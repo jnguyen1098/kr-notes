@@ -1,6 +1,6 @@
 all:
-	gcc hello_world.c -o old_hw
-	gcc hello_world_modern.c -o new_hw
+	gcc hello_world.c -ansi -Wall -pedantic -o old_hw
+	gcc hello_world_modern.c -ansi -Wall -pedantic -o new_hw
 
 run: all
 	./old_hw

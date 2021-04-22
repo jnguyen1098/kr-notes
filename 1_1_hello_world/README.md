@@ -23,3 +23,10 @@ syntax for `(void)` is that of `()`.
 Other changes in the modern-day version are:
 + Unifying the three `printf` statements into a single call
 + Explicitly `return`ing a value in `main()`
+
+If you compile this program under `-ansi`, `-std=c89`, or `-std=c90`, you get
+undefined behaviour on exit: the lack of `return` statement at the end of main
+is required in these standards (though as of C99 it is no longer a thing)...
+
+If you run this program and then run `echo "$?"`, you might get any value.
+In my particular case, I got a return value of 37.
