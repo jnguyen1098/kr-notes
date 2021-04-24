@@ -15,5 +15,3 @@ padding to align to the left.
 | %-3s | a _ _ | abc |
 
 (`_` represents a space. `_ _ a` would be ` ` ` ` `a` and `a _ _` `a` ` ` ` `)
-
-## Bibliography
